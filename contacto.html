@@ -7,6 +7,7 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <title>DGONIX</title>
     <link rel="stylesheet" href="estilo.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -36,15 +37,25 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="contacto.html">Contáctanos</a>
             </li>
+            <form class="d-flex" role="search" >
+              <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Search" >
+              <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            </form>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Carrito
-                <i class="fa-solid fa-cart-plus"></i>
+              <a class="nav-link active" aria-current="page" href="#">
+                <i class="fa-solid fa-cart-plus">
+                  <div class="buy-card">
+                    <ul class="nav-card">
+                      <li>CARRITO DE COMPRAS</li>
+                    </ul>
+                    <button class="pagarcarrito">Pagar</button>
+                    <button class="btn-vaciarcarro">Vaciar carrito</button>
+                  </div>
+
+                </i>
               </a>
               </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Search">
-            <button class="btn btn-outline-dark" type="submit">Buscar</button>
-          </form>
+          
         </div>
       </div>
     </nav>

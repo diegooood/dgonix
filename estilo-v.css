@@ -21,85 +21,43 @@ body{
 .container{
   display: flex;
   justify-content: center;
-  /*height: 100%;
-  position: relative;*/
- 
   
 }
 
 .card{
-  position: relative;
   width: 300px;
-  height: 550px ;
   margin: 0 10px;
   border-radius: 6px;
   overflow: hidden;
   background: #fff;
-  background-color: black;
   box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
   cursor: pointer;
   transition: all 400ms ease;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 4px solid transparent;
-  color: goldenrod;
 }
-
-
-/*.container::before{
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 300px;
-  background-image: conic-gradient(goldenrod 20deg, transparent 120deg);
-  animation: rotar 2s linear infinite;
-}
-
-@keyframes rotar{
-  from{
-    transform: rotate(0deg);
-  }
-  to{
-    transform: rotate(360deg);
-  }
-}
-
-.container::after{
-  content: "";
-  position: absolute;
-  height: 90%;
-  width: 290px;
-  border-radius: 10%;
-  box-shadow: inset 0px 1px 10px rgba(0,0,0,0.2);
-
-}*/
 
 .card:hover{
   box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
   transform: translateY(-3%);
-  border-color: darkgoldenrod;
 }
 
 .card img{
   width: 100%;
-  height: 300px;
+  height: auto;
 }
 
 .card .contenido{
   padding: 15px;
   text-align: center;
-  color: goldenrod;
 }
 
 .card .contenido p{
   line-height: 1.5;
-  color: goldenrod;
+  color: #6a6a6a;
 }
 
 .card .contenido h3{
   font-weight: 400;
   margin-bottom: 15px;
-  color: goldenrod;
 }
 
 .card .contenido a{
@@ -107,8 +65,8 @@ body{
   display: inline-block;
   padding: 10px;
   margin-top: 10px;
-  color: goldenrod;
-  border: 4px solid goldenrod;
+  color: aqua;
+  border: 1px solid aqua;
   border-radius: 4px;
   transition: all 400ms ease;
 }
@@ -135,148 +93,170 @@ color: white;
 
 .cardredes{
   color: goldenrod;
-  margin-left: 30px;
-  font-size: 25px;
 }
 
-.contenedor{
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+.carousel-slide2 img{
+  width: 100%;
+  height: auto;
+  align-items: left;
 }
 
-.contenedor a{
-  font-size: 80px;
-  transition: all ease 400ms;
-  align-items: center;
-}
-
-.contenedor a:hover{
-  color: goldenrod;
-  transform: scale(1.2);
-}
-
-.whatsapp{
+.container-titulo{
+  margin-left: 200px;
+  padding: 30px;
+  margin-bottom: 20px;
   color: white;
+
+ 
 }
 
-.twitter{
-  color: white;
+main{
+  display: flex;
+  gap: 30px;
+  margin-bottom: 80px;
 }
 
-.insta{
-  color: white;
+.container-img{
+  margin-left: 200px;
+  background-color: #f7f7f9 ;
+  flex: 1;
 }
 
-.tiktok{
-  color: white;
-}
-
-.rrss{
+.container-detalles-producto{
+  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  align-items: center;
-  margin-left: 20px;
-
 }
 
-.rrss a{
+.container.precio{
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
   display: flex;
-  margin-right: 5px;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.ubicacion{
-  color: whitesmoke;
-  text-align: center;
-  font-size: 25px;
-  margin-right: 80px;
-}
-
-.ubicacion img{
-  margin-bottom: 30px;
-}
-
-.card-link{
-  color: goldenrod;
-}
-
-.card1 img{
-  max-width: 80%; 
-    height: auto; 
-    display: block; 
-    margin: 0 auto; 
-}
-
-.registro{
-  width: 400px;
-  background: rgba(184, 135, 11, 0.425);
-  padding: 30px;
-  margin: auto;
-  margin-top: 100px;
-  border-radius: 6px;
-  color: black;
-  box-shadow: 7px 13px 37px yellow;
-}
-
-.registro h4{
-  font-size: 22px;
-  margin-bottom: 20px;
-  text-align: center;
+.container-precio span{
   color: white;
+  font-size: 24px;
+  font-weight: 300;
 }
 
-.controles{
-  width: 100%;
-  background: black;
-  padding: 10px;
-  border-radius: 3px;
-  margin-bottom: 16px;
-  border: 2px solid white;
-  font-size: 18px;
-  color: white;
+.container-detalles-producto{
+  padding: 30px 0;
 }
 
-.registro p{
-  height: 40px;
-  text-align: center;
-  font-size: 18px;
-  line-height: 40px;
+.form-group{
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+  margin-bottom: 15px;
 }
 
-.registro a{
-  color: white;
-  text-decoration: none;
+.form-group label{
+  width: 100px;
+  color: gold;
+  font-weight:700 ;
+
 }
 
-.registro a:hover{
-  color: white;
-  text-decoration: underline;
-}
-
-.registro .boton{
-  background: black;
+.form-group select{
+  width: 300px;
   border: none;
-  padding: 12px;
+  padding: 12px 15px;
+  background-color: white;
+  outline:none;
+  color: #6a6a6a;
+
+}
+
+.btn-clean{
+  border:none;
+  background: none;
   color: white;
-  margin:30px 0;
-  font-size: 16px;
-  margin-left: 105px;
+  margin-right: 500px;
+  cursor: pointer;
+}
+
+.btn-clean:hover{
+  color: gold
+}
+
+.btn-agregar-al-carro{
+  display: auto;
+  gap: 20px;
+  padding-bottom: 50px;
+  background:none;
+  border:none;
+  color: white;
+  margin-top: 20px;
+}
+
+.btn-agregar-al-carro:hover{
+  color: gold;
+}
+
+.title-descripcion{
+  color: gold;
+  padding: 10px 0;
+  display: flex;
   
 }
 
-.registro .boton:hover{
-  background: black;
-  box-shadow: 0 0 10px goldenrod,
-  0 0 40px goldenrod, 0 0 80px goldenrod;
-  transition-delay: 0.1s;
+.text-descripcion{
+  color: white;
+  font-size: 19px;
+  line-height: 22px;
+  margin-top: 15px;
+}
 
+.container-relacionados h2{
+  color: gold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.card-list-products{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  margin:100px;
+}
+
+.card-relacionados{
+  cursor:pointer;
+}
+
+.card-relacionados:hover{
+  color: goldenrod;
+  transform: scale(1.1);
+}
+.card-relacionados img{
+  object-fit: cover;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+
+}
+
+.info-card-relacionados{
+  display:flex;
+  justify-content: space-between;
+}
+
+.text-producto{
+  color: white;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.price{
+  color: white;
+  margin-right: 100px;
+  
 }
 
 .nav-card{
   display: none;
-  z-index: 1;
 }
 
 .btn-vaciarcarro{
@@ -356,5 +336,3 @@ color: white;
 .buy-card{
   z-index: 2;
 }
-
-
