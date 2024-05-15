@@ -1,0 +1,413 @@
+body{
+  background: linear-gradient(to right, #000000,70%, #ffd700);
+}
+@font-face {
+  font-family: 'Kirsty';
+  src: url('fuentes/kirsty_bd-webfont.woff2') format('woff2');
+}
+body {
+  font-family: 'Kirsty', sans-serif;
+}
+@font-face {
+  font-family: 'Kirsty';
+  src: url('fuentes/kirsty_bd-webfont.woff2') format('woff2');
+}
+.titulohoodie{
+text-align: left;
+font-family: 'Kirsty', sans-serif;
+color: goldenrod;
+}
+
+.container{
+display: flex;
+justify-content: center;
+
+
+
+}
+
+.card{
+position: relative;
+width: 300px;
+height: 550px ;
+margin: 0 10px;
+border-radius: 6px;
+overflow: hidden;
+background: #fff;
+background-color: black;
+box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+cursor: pointer;
+transition: all 400ms ease;
+flex-direction: column;
+justify-content: space-between;
+border: 4px solid transparent;
+color: goldenrod;
+}
+
+
+/*.container::before{
+content: "";
+position: absolute;
+height: 100%;
+width: 300px;
+background-image: conic-gradient(goldenrod 20deg, transparent 120deg);
+animation: rotar 2s linear infinite;
+}
+
+@keyframes rotar{
+from{
+  transform: rotate(0deg);
+}
+to{
+  transform: rotate(360deg);
+}
+}
+
+.container::after{
+content: "";
+position: absolute;
+height: 90%;
+width: 290px;
+border-radius: 10%;
+box-shadow: inset 0px 1px 10px rgba(0,0,0,0.2);
+
+}*/
+
+.card:hover{
+box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+transform: translateY(-3%);
+border-color: darkgoldenrod;
+}
+
+.card img{
+width: 100%;
+height: 300px;
+}
+
+.card .contenido{
+padding: 15px;
+text-align: center;
+color: goldenrod;
+}
+
+.card .contenido p{
+line-height: 1.5;
+color: goldenrod;
+}
+
+.card .contenido h3{
+font-weight: 400;
+margin-bottom: 15px;
+color: goldenrod;
+}
+
+.card .contenido a{
+text-decoration: none;
+display: inline-block;
+padding: 10px;
+margin-top: 10px;
+color: goldenrod;
+border: 4px solid goldenrod;
+border-radius: 4px;
+transition: all 400ms ease;
+}
+
+@font-face {
+font-family: 'Kirsty';
+src: url('fuentes/kirsty_bd-webfont.woff2') format('woff2');
+}
+.textotitulo{
+text-align: center;
+font-family: 'Kirsty', sans-serif;
+color: goldenrod;
+}
+
+@font-face {
+font-family: 'Kirsty';
+src: url('fuentes/kirsty_bd-webfont.woff2') format('woff2');
+}
+.textocontacto{
+text-align: center;
+font-family: 'Kirsty', sans-serif;
+color: white;
+}
+
+.tituloRedes{
+color: goldenrod;
+text-align:  center;
+font-size: 25px;
+}
+
+.contenedor{
+display: grid;
+justify-content: center;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+}
+
+.contenedor a{
+font-size: 80px;
+transition: all ease 400ms;
+align-items: center;
+}
+
+.contenedor a:hover{
+color: goldenrod;
+transform: scale(1.2);
+}
+
+.whatsapp{
+color: white;
+}
+
+.twitter{
+color: white;
+}
+
+.insta{
+color: white;
+}
+
+.tiktok{
+color: white;
+}
+
+.rrss{
+display:flex;
+flex-direction: row;
+gap: 100px;
+align-items: center;
+margin-left: 600px;
+
+}
+
+.rrss a{
+display: flex;
+margin-right: 5px;
+}
+
+.ubicacion{
+color: whitesmoke;
+text-align: center;
+font-size: 25px;
+margin-left: 90px;
+}
+
+
+.card-link{
+color: goldenrod;
+}
+
+.card1 img{
+max-width: 80%; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
+}
+
+.registro{
+width: 400px;
+background: rgba(184, 135, 11, 0.425);
+padding: 30px;
+margin: auto;
+margin-top: 100px;
+border-radius: 6px;
+color: black;
+box-shadow: 7px 13px 37px yellow;
+}
+
+.registro h4{
+font-size: 22px;
+margin-bottom: 20px;
+text-align: center;
+color: white;
+}
+
+.controles{
+width: 100%;
+background: black;
+padding: 10px;
+border-radius: 3px;
+margin-bottom: 16px;
+border: 2px solid white;
+font-size: 18px;
+color: white;
+}
+
+.registro p{
+height: 40px;
+text-align: center;
+font-size: 18px;
+line-height: 40px;
+}
+
+.registro a{
+color: white;
+text-decoration: none;
+}
+
+.registro a:hover{
+color: white;
+text-decoration: underline;
+}
+
+.registro .boton{
+background: black;
+border: block;
+padding: 12px;
+color: white;
+margin:30px 0;
+font-size: 16px;
+margin-left: 45px;
+text-align: center;
+
+
+}
+
+.registro .boton:hover{
+background: black;
+box-shadow: 0 0 10px goldenrod,
+0 0 40px goldenrod, 0 0 80px goldenrod;
+transition-delay: 0.1s;
+
+}
+
+/*Vicente*/
+
+
+/*Vicente*/
+
+#mensaje1, #mensaje2, #mensaje3, #mensaje4,
+#mensaje5, #mensaje6, #mensajecorreo, #mensajecontra{
+color: goldenrod;
+
+}
+
+.navbar-brand{
+font-size: 45px !important;
+font-family: 'Kirsty';
+}
+
+.nav-item{
+font-size: 20px;
+font-family: 'Kirsty';
+}
+
+.dropdown-item{
+background-color: white;
+color: goldenrod;
+}
+
+.inisesion{
+width: 100%;
+margin-bottom: 170px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.form-group{
+margin-bottom: 20px;
+}
+
+.form-control{
+background: black;
+color: goldenrod;
+width: 100%;
+padding: 10px;
+border-radius: 5px;
+border: 1px solid goldenrod;
+}
+
+.form-check {
+margin-bottom: 15px;
+}
+
+.btn {
+width: 100%;
+max-width: 200px; 
+}
+
+/* Para la api de google maps: */ 
+#map{   
+  height: 600px;   
+  width: 100%;   
+  margin-bottom: 300px; 
+}
+
+
+/* Para el letrero de ofertas*/
+#countdown{
+  position:relative;
+  font-size: 50px;
+  letter-spacing: 15px;
+  color: #0008;
+  font-family: 'Kirsty' ;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+  line-height: 0.70em;
+  outline: none;
+  animation: animate 5s linear infinite;
+
+}
+
+@keyframes animate {
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    color: #0008;
+    text-shadow: none;
+  }
+
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+    color: #fff;
+    text-shadow: 0 0 10px goldenrod,
+                 0 0 20px goldenrod,
+                 0 0 40px goldenrod,
+                 0 0 80px goldenrod,
+                 0 0 160px goldenrod;
+  }
+}
+
+/* Para la hero Section
+.hero {
+  background-image: url('imagenes/black_net_4k_hd_black.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.7em;
+  margin-bottom: 30px;
+}
+
+.btn-unete {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-unete:hover {
+  background-color: #e55f52;
+} 
+*/
+
