@@ -1,0 +1,32 @@
+{% extends 'master/master.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+
+<!-- Formulario de registro -->
+<div class="registro">
+    <form method="POST" action="{% url 'add_cliente' %}">
+        {% csrf_token %}
+        <h4>DGONIX</h4>
+        <h4>Formulario de Registro</h4>
+        <input class="controles" type="text" name="nombre" id="nombre" placeholder="Ingrese Nombre" required>
+        <br><br>
+        <input class="controles" type="text" name="apellido" id="apellido" placeholder="Ingrese Apellido" required>
+        <br><br>
+        <input class="controles" type="email" name="correo" id="correo" placeholder="Ingrese Correo Electrónico" required>
+        <br><br>
+        <input class="controles" type="text" name="celular" id="celular" placeholder="Ingrese Numero Telefónico" required>
+        <br><br>
+        <input class="controles" type="text" name="rut" id="rut" placeholder="Ingrese su Rut" required>
+        <br><br>
+        <input class="controles" type="password" name="contrasena" id="contrasena" placeholder="Ingrese Contraseña" required>
+        <br><br>
+        <p>Estoy de acuerdo con los <a href="#">Términos y Condiciones</a> de DGONIX</p>
+        <input class="boton" style="margin-left: 100px;" type="submit" value="Crear Cuenta">
+        <p><a href="#">Iniciar Sesión</a></p>
+    </form>
+</div>
+<br><br><br>
+
+{% endblock %}

@@ -1,0 +1,78 @@
+
+{%extends 'master/master.html' %}
+
+{%load static%}
+
+
+{%block content%}
+<link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+
+
+<!--DIV DE CARD DE CONTACTO-->
+<div class="card1 mb-3">
+    <img src="{% static 'images/imgc.jpg' %}" class="card-img-top">
+    <div class="card-body">
+        <br>
+        <br>
+        <div class="textotitulo">
+        <h2 class="card-title" style="font-family: KirstyBd;">DGONIX, dale tu real cortex</h2>
+    </div>
+        <br>
+        <br>
+        <div class="textocontacto">
+        <p class="card-text" style="font-family: KirstyBd; font-size: 25px;">Bienvenid@ a nuestra tienda online, ¿Estás list@ para darle tu cortex?, esperamos que si 
+        de parte de la familia DGONIX, a continuación te dejamos nuestras redes sociales para que estés atent@ al merch 
+        del mes de Mayo, así mismo, te dejamos un mapa de nuestra sucursal física en Viña del Mar.
+        </p>
+    </div>
+    </div>
+    </div>
+    <br>
+    <br>
+
+
+<div class="tituloRedes">
+    Nuestras Redes Sociales:
+</div>
+
+<br>
+<!--Div de iconos-->
+<div class=" contenedor">
+  <div class="rrss">
+  <a href="#" class="whatsapp">
+    <i class="fa-brands fa-square-whatsapp"></i>
+  </a>
+  <a href="#" class="twitter">
+    <i class="fa-brands fa-x-twitter"></i>
+ 
+  <a href="#" class="insta">
+    <i class="fa-brands fa-square-instagram"></i>
+  </a>
+  <a href="#" class="tiktok">
+    <i class="fa-brands fa-tiktok"></i>
+  </a>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+  <div class="ubicacion">
+    Donde encontrarnos:
+    <br>
+    <br>
+    Direción: Mall Marina Oriente,Piso 2,Local N°420
+    <br>
+    <br>
+  </div>
+
+<br>
+<br>
+<br>
+
+<!--Script de la api de google con los permisos correspondientes-->
+<div id="map"></div>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDukfOkmPJ6P8f4OOhmsZzk8s3sU-99ytw&callback=initMap">
+</script>
+
+{%endblock%}

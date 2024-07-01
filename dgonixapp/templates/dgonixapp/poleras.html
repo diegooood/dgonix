@@ -1,0 +1,142 @@
+{%extends 'master/master.html' %}
+
+{%load static%}
+
+
+{%block content%}
+<link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+
+<br>
+    <div class="titulopolera" style="text-align: center; color: goldenrod;">
+    <h2>Poleras</h2>
+</div>
+<br>
+<br>
+<style>
+    .card-img-top {
+      height: 380px; /* Ajusta esta altura según tus necesidades */
+      object-fit: cover; /* Para asegurarse de que las imágenes mantengan su relación de aspecto */
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col">
+    <div class="card">
+        <figure>
+            <img src="{% static 'images/card3.webp' %}" alt="">
+        </figure>
+        <div class="contenido">
+            <h3>$12.990</h3>
+            <p>Polera Saint Hills</p>
+            <a href="{% url 'vistaespecifica' %}">Ver</a>
+        </div>
+    </div>
+</div>
+<div class="col">
+<div class="card">
+    <figure>
+        <img src="{% static 'images/Polera-Essentials.webp' %}" alt="">
+    </figure>
+    <div class="contenido">
+        <h3>$16.000</h3>
+        <p>Polera Essentials </p>
+        <a href="#">Ver</a>
+    </div>
+</div>
+</div>
+<div class="col">
+<div class="card">
+    <figure>
+        <img src="{% static 'images/polera-Instinto.jpg' %}" alt="">
+    </figure>
+    <div class="contenido">
+        <h3>$12.000</h3>
+        <p>Polera Instinto Oversize</p>
+        <a href="#">Ver</a>
+    </div>
+</div>
+</div>
+<br>
+<hr>
+<br>
+<div class="col">
+    <div class="card">
+        <figure>
+            <img src="{% static 'images/Polera-LooneyToones.webp' %}" alt="">
+        </figure>
+        <div class="contenido">
+            <h3>$12.990</h3>
+            <p>Polera Looney Tunes </p>
+            <a href="#">Ver</a>
+        </div>
+    </div>
+</div>
+<div class="col">
+    <div class="card">
+        <figure>
+            <img src="{% static 'images/Polera-Misfits.webp' %}" alt="">
+        </figure>
+        <div class="contenido">
+            <h3>$15.990</h3>
+            <p>Polera Misfits Clásica</p>
+            <a href="#">Ver</a>
+        </div>
+    </div>
+</div>
+<div class="col">
+    <div class="card">
+        <figure>
+            <img src="{% static 'images/Polera-Sukeban.webp' %}" alt="">
+        </figure>
+        <div class="contenido">
+            <h3>$16.990</h3>
+            <p>Polera Sukeban Oversize</p>
+            <a href="#">Ver</a>
+        </div>
+    </div>
+</div>
+<br>
+<hr>
+<br>
+<div class="col">
+    <div class="card">
+        <figure>
+            <img src="{% static 'images/Polera-TheImmortal.webp' %}" alt="">
+        </figure>
+        <div class="contenido">
+            <h3>$17.000</h3>
+            <p>Polera "The Immortal"</p>
+            <a href="#">Ver</a>
+        </div>
+    </div>
+</div>
+<div class="col">
+    <div class="card">
+        <figure>
+            <img src="{% static 'images/Polera-Panamericanos.webp' %}" alt="">
+        </figure>
+        <div class="contenido">
+            <h3>$18.990</h3>
+            <p>Polera Juegos Panamericanos 2023</p>
+            <a href="#">Ver</a>
+        </div>
+    </div>
+</div>
+<div class="col">
+    <div class="card">
+        <figure>
+            <img src="{% static 'images/Polera-Wolf.webp' %}" alt="">
+        </figure>
+        <div class="contenido">
+            <h3>$10.990</h3>
+            <p>Polera Bloody Wolf</p>
+            <a href="#">Ver</a>
+        </div>
+    </div>
+</div>
+<br>
+<hr>
+<br>
+<script src="{% static '/js/maindgo.js' %}"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+{%endblock%}
