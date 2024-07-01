@@ -1,0 +1,142 @@
+{%extends 'master/master.html' %}
+
+{%load static%}
+
+
+{%block content%}
+<link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+    
+<br>
+    <div class="titulopantalon" style="text-align: center; color: goldenrod;">
+    <h2>Pantalones</h2>
+</div>
+    <br>
+    <br>
+    <style>
+        .card-img-top {
+          height: 380px; /* Ajusta esta altura según tus necesidades */
+          object-fit: cover; /* Para asegurarse de que las imágenes mantengan su relación de aspecto */
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+        <div class="card">
+            <figure>
+                <img src="{% static 'images/card2.webp' %}" alt="">
+            </figure>
+            <div class="contenido">
+                <h3>$19.990</h3>
+                <p>Hoddie oversize heavyweight® gris melange</p>
+                <a href="{% url 'vistaespecifica' %}">Ver</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+    <div class="card">
+        <figure>
+            <img src="{% static 'images/Hoodie Good Vibes.webp' %}" alt="">
+        </figure>
+        <div class="contenido">
+            <h3>$24.000</h3>
+            <p>Hoodie Good Vibes</p>
+            <a href="#">Ver</a>
+        </div>
+    </div>
+</div>
+    <div class="col">
+    <div class="card">
+        <figure>
+            <img src="{% static 'images/Hoodie Monkey.webp' %}" alt="">
+        </figure>
+        <div class="contenido">
+            <h3>$10.000</h3>
+            <p>Hoodie Monkey</p>
+            <a href="#">Ver</a>
+        </div>
+    </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="col">
+        <div class="card">
+            <figure>
+                <img src="{% static 'images/Hoodie-Beige.webp' %}" alt="">
+            </figure>
+            <div class="contenido">
+                <h3>$15.990</h3>
+                <p>Hoodie Básico Beige</p>
+                <a href="#">Ver</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <figure>
+                <img src="{% static 'images/Hoodie-Black.webp' %}" alt="">
+            </figure>
+            <div class="contenido">
+                <h3>$14.990</h3>
+                <p>Hoodie Stylish Black</p>
+                <a href="#">Ver</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <figure>
+                <img src="{% static 'images/Hoodie-Blast.webp' %}" alt="">
+            </figure>
+            <div class="contenido">
+                <h3>$20.990</h3>
+                <p>Hoodie "Blast!"</p>
+                <a href="#">Ver</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="col">
+        <div class="card">
+            <figure>
+                <img src="{% static 'images/Hoodie-dragón.webp' %}" alt="">
+            </figure>
+            <div class="contenido">
+                <h3>$20.000</h3>
+                <p>Hoodie Trendy Dragón</p>
+                <a href="#">Ver</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <figure>
+                <img src="{% static 'images/Hoodie-Lucky-me.webp' %}" alt="">
+            </figure>
+            <div class="contenido">
+                <h3>$18.990</h3>
+                <p>Hoodie "Lucky me, I see ghosts"</p>
+                <a href="#">Ver</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <figure>
+                <img src="{% static 'images/Hoodie-Rick-Pink.webp' %}" alt="">
+            </figure>
+            <div class="contenido">
+                <h3>$21.990</h3>
+                <p>Hoodie Rick&Morty Pink</p>
+                <a href="#">Ver</a>
+            </div>
+        </div>
+    </div>
+<br>
+<hr>
+<br>
+<script src="{% static '/js/maindgo.js' %}"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+{%endblock%}

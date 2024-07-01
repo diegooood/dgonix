@@ -1,0 +1,79 @@
+{%extends 'master/master.html' %}
+
+{%load static%}
+
+
+{%block content%}
+<div class="container">
+    <h1 class="perf text-center">Registro de Clientes</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Numero</th>
+                <th scope="col">Rut</th>
+                <th scope="col">Contrasena</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for formulario in formularios %}
+            <tr>
+                <li>
+                <td>{{ formulario.nombre }}</td>
+                <td>{{ formulario.apellido }}</td>
+                <td>{{ formulario.correo }}</td>
+                <td>{{ formulario.numero }}</td>
+                <td>{{ formulario.rut }}</td>
+                <td>{{ formulario.contrasena }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="7">No hay clientes registrados.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+<link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+
+<!--DIV DE FORMULARIO-->
+    <div class="registro" method="POST">
+        <h4>DGONIX</h4>
+        <h4>Formulario de Registro</h4>
+        <h4>Necesario para continuar con el proceso</h4>
+        <input class="controles" type="text" name="nombre" id="nombre" placeholder="Ingrese Nombre" required>
+        <span id="mensaje1"></span>
+        <br>
+        <br>
+        <input class="controles" type="text" name="apellido" id="apellido" placeholder="Ingrese Apellido" required>
+        <span id="mensaje2"></span>
+        <br>
+        <br>
+        <input class="controles" type="email" name="correo" id="correo" placeholder="Ingrese Correo Eletrónico" required>
+        <span id="mensaje3"></span>
+        <br>
+        <br>
+        <input class="controles" type="text" name="celular" id="celular" placeholder="Ingrese Numero Telefónico" required>
+        <span id="mensaje4"></span>
+        <br>
+        <br>
+        <input class="controles"  type="text" name="rut" id="rut" placeholder="Ingrese su Rut" required>
+        <span id="mensaje5"></span>
+        <br>
+        <br>
+        <input class="controles" type="password" name="contrasena" id="contrasena" placeholder="Ingrese Contraseña" required>
+        <span id="mensaje6"></span>
+        <br>
+        <br>
+        <p>Estoy de acuerdo con los <a href="#">Términos y Condiciones</a> de DGONIX</p>
+        <input class="boton" style="margin-left: 100px;" type="button" onclick="validar()" value="Crear Cuenta">
+        <p><a href="#">Iniciar Sesión</a></p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <script src="{% static '/js/maindgo.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+{%endblock%}
